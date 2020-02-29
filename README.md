@@ -22,7 +22,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Include this middleware in your Rails application by adding it to the middleware stack as follows.
+
+```rb
+# config/initializers/bad_json_request_handler.rb
+Rails.application.config.middleware.insert_after ActionDispatch::DebugExceptions, BadJsonRequestHandler::Middleware
+
+```
+
 
 ## Development
 
