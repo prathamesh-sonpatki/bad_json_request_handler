@@ -7,3 +7,4 @@
 /test/internal/log/*
 /tmp/
 .idea
+.ruby-version
