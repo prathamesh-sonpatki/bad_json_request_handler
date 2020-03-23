@@ -6,7 +6,7 @@ class BadJsonRequestHandlerTest < ActionDispatch::IntegrationTest
 
     assert_response :bad_request
     body = JSON.parse(response.body)
-    expected = { "errors" => { "message" => "Invalid request payload: 767: unexpected token at '{ event: { seconds: }}'" } }
-    assert_equal expected, body
+    expected = "Invalid request payload:"
+    assert_includes body.dig('errors', 'message'), expected
   end
 end
