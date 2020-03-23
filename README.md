@@ -1,6 +1,6 @@
 # BadJsonRequestHandler
 
-[![Gem Version][gem-version-img]][gem-url]
+![Gem Version][gem-version-img]
 
 You have a Rails API endpoint which expects JSON request payload. But some clients
 send invalid JSON requests.
