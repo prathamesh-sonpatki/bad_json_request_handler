@@ -42,12 +42,11 @@ Or install it yourself as:
 
 ## Usage
 
-Include this middleware in your Rails application by adding it to the middleware stack as follows.
+This gem automatically includes `BadJsonRequestHandler` middleware in your Rails application
+by adding it to the middleware stack as follows.
 
 ```rb
-# config/initializers/bad_json_request_handler.rb
 Rails.application.config.middleware.insert_after ActionDispatch::DebugExceptions, BadJsonRequestHandler::Middleware
-
 ```
 ## Development
 
