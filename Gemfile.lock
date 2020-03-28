@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bad_json_request_handler (0.0.1)
+    bad_json_request_handler (0.0.2)
 
 GEM
   remote: https://rubygems.org/
