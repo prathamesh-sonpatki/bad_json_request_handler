@@ -1,6 +1,13 @@
+require "rails/railtie"
 require "bad_json_request_handler/version"
 
 module BadJsonRequestHandler
+  class Railtie < ::Rails::Railtie
+    initializer  'railtie.configure_rails_initialization' do |app|
+      app.config.middleware.insert_after ActionDispatch::DebugExceptions, Middleware
+    end
+  end
+
   class Middleware
     def initialize(app)
       @app = app
