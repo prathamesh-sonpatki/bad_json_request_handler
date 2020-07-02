@@ -50,7 +50,12 @@ Rails.application.config.middleware.insert_after ActionDispatch::DebugExceptions
 ```
 ## Development
 
-After checking out the repo, run `rake test` to run the tests.
+After checking out the repo, run following commands to run the tests.
+
+```rb
+bundle exec appraisal install
+bundle exec appraisal rake test
+```
 
 ## Contributing
 
