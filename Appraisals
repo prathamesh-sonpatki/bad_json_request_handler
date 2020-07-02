@@ -5,3 +5,8 @@ end
 appraise "rails-5" do
   gem "rails", "5.2.4.2"
 end
+
+
+appraise "rails-edge" do
+  gem "rails", github: "rails/rails"
+end
